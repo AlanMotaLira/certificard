@@ -1,0 +1,245 @@
+body {
+  font-family: "Source Code Pro";
+  background: linear-gradient(45deg, #bfb9ae 35%, #5e5d73 96.03%);
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 35px 70px;
+  padding: 30px 50px 45px 50px;
+  background: #ecf4ff;
+  border-radius: 20px;
+  justify-content: center;
+  filter: Drop-shadow(6px 6px 6px #aeacf2);
+}
+/*header*/
+
+.cabecalho {
+  display: flex;
+  vertical-align: left;
+  color: #1c1c1c;
+}
+
+.foto-perfil {
+  border-radius: 460px;
+  margin-right: 30px;
+  width: 154px;
+  filter: Drop-shadow(0px 4px 4px #aeacf2);
+  object-fit: fill;
+}
+
+.container h1 {
+  margin: 22px 0 13px 0;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.container h3 {
+  font-size: 24px;
+  margin: 0;
+  font-style: normal;
+}
+
+.botao {
+  float: right;
+  position: relative;
+  background: none;
+  font-weight: 400;
+  color: #00060d;
+  padding: 8px 16px;
+  border: 2px solid #00060d;
+  border-radius: 20px;
+  font-size: 15px;
+  overflow: hidden;
+  transition: 0.5s all ease;
+  opacity: 0.5;
+}
+
+.botao:hover {
+  color: #ecf4ff;
+  font-weight: 400;
+  border: 2px solid #aeacf2;
+  opacity: 1;
+  cursor: pointer;
+  filter: Drop-shadow(2px 4px 5px #aeacf2);
+}
+.botao:before {
+  background: #00060d;
+  content: "";
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.tema:before {
+  width: 0%;
+  height: 100%;
+}
+
+.tema:hover:before {
+  width: 100%;
+}
+/*main*/
+
+.corpo {
+  background: linear-gradient(to bottom, #6568a6, #aeacf2);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  color: #1c1c1c;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  vertical-align: top;
+  filter: Drop-shadow(3px 3px 5px #aeacf2);
+}
+
+.corpo h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ecf4ff;
+  font-size: 42px;
+  text-align: center;
+  margin: 30px 0 0 0;
+  filter: Drop-shadow(2px 2px 4px #aeacf2);
+}
+
+.corpo p {
+  color: #ecf4ff;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.lista {
+  margin: 30px 0 0 0;
+  padding: 0 0 120px 80px;
+}
+
+.itens {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.85;
+  text-align: left;
+  transition: 300ms;
+}
+.exibir {
+  width: 35px;
+  color: #ecf4ff;
+  margin-left: 10px;
+  transition: 300ms;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.exibir:hover {
+  transform: scale(1.2);
+}
+.cp_embed_wrapper {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  width: 0px;
+  height: 0px;
+  transition: 3s all;
+}
+.cp_embed_wrapper:hover {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+}
+.exibir:hover ~ .cp_embed_wrapper,
+.exibir:focus ~ .cp_embed_wrapper {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+}
+
+.itens:hover .exibir {
+  opacity: 1;
+}
+
+.itens a {
+  text-decoration: none;
+  color: #1c1c1c;
+  filter: Drop-shadow(2px 2px 4px #aeacf2bb);
+}
+
+.itens a:hover {
+  text-decoration: underline;
+  color: #ecf4ff;
+  filter: Drop-shadow(3px 3px 3px #aeacf2);
+}
+
+.itens:nth-child(1) {
+  list-style: "💱";
+}
+.itens:nth-child(2) {
+  list-style: "🔮";
+}
+.itens:nth-child(3) {
+  list-style: "📰";
+}
+.itens:nth-child(4) {
+  list-style: "📼";
+}
+.itens:nth-child(5) {
+  list-style: "🏆";
+}
+.itens:nth-child(6) {
+  list-style: "🎮";
+}
+
+.itens:nth-child(7) {
+  list-style: "👨‍🎓";
+}
+.itens:nth-child(8) {
+  list-style: "🌐";
+}
+
+/*tema dark*/
+.dark {
+  background: linear-gradient(45deg, #172d40 35%, #a4a5a6 96.03%);
+}
+
+.dark .container {
+  background: #00060d;
+  filter: Drop-shadow(6px 6px 6px #081526);
+}
+
+.dark .cabecalho {
+  color: #a4a5a6;
+}
+.dark .botao {
+  color: #aeacf2;
+  border: 2px solid #aeacf2;
+}
+
+.dark .botao:hover {
+  border: 2px solid #a4a5a6;
+  color: #1c1c1c;
+  filter: Drop-shadow(2px 4px 5px #a4a5a6);
+}
+.dark .botao:before {
+  background: #aeacf2;
+}
+.dark .corpo {
+  background: linear-gradient(to bottom, #172d40, #081526);
+  filter: Drop-shadow(3px 3px 5px #081526);
+  color: #a4a5a6;
+}
+
+.dark .corpo h2,
+.dark .itens a,
+.dark .foto-perfi {
+  color: #a4a5a6;
+  filter: Drop-shadow(3px 3px 5px #081526);
+}
